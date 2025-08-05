@@ -1,34 +1,41 @@
 # Web-Scrapping-Project
 Overview
-This project collects box office data for movies from Box Office Mojo using web scraping techniques. The data is fetched using Python libraries such as requests to handle HTTP requests, and BeautifulSoup to parse the HTML content of web pages.
+This project collects box office data for movies from Box Office Mojo using web scraping techniques. Data is fetched with Python libraries such as requests (for web access) and BeautifulSoup (for parsing HTML).
 
 How to Use
-Import Required Libraries
-The project uses popular Python libraries including NumPy, Pandas, Matplotlib, Seaborn, BeautifulSoup, and Requests.
+1. Import Required Libraries
+The project uses:
 
-Set the Target URL
-The URL containing the yearly box office data is defined as:
+NumPy
 
+Pandas
+
+Matplotlib
+
+Seaborn
+
+BeautifulSoup
+
+Requests
+
+2. Set the Target URL
 python
 url = "https://www.boxofficemojo.com/year/?ref_=bo_nb_di_secondarytab"
-Fetch the Web Page Content
-Using requests.get(), the HTML content of the page is downloaded:
-
+3. Fetch the Web Page Content
 python
 content = requests.get(url)
 data = content.text
-Next Steps
-With the HTML content available, you can parse and extract specific data such as movie rankings, grosses, release dates, and more by using BeautifulSoup.
+4. Next Steps
+With the HTML content available (data), you can parse and extract details like movie rankings, gross earnings, release dates, and more using BeautifulSoup.
 
 Requirements
-Make sure you have Python 3 installed along with the following libraries:
-numpy, pandas, matplotlib, seaborn, beautifulsoup4, and requests.
+Python 3.x
 
-You can install these dependencies via pip:
+Install all dependencies with:
 
 bash
 pip install numpy pandas matplotlib seaborn beautifulsoup4 requests
 Notes
-This project currently fetches and stores the webpage content. You can further enhance it by implementing data extraction and analysis.
+This project currently fetches and stores the webpage content. For full analysis, you can enhance it by implementing HTML parsing and data extraction.
 
 Remember to respect the website’s terms of use and avoid sending too many requests to prevent being blocked.
