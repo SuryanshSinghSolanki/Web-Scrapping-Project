@@ -37,7 +37,7 @@ With the HTML content available (`data`), you can parse and extract details like
 
 Install all dependencies with:
 
-pip install numpy pandas matplotlib seaborn beautifulsoup4 requests
+*pip install numpy pandas matplotlib seaborn beautifulsoup4 requests*
 
 
 ## Notes
