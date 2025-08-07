@@ -23,7 +23,7 @@ url = "https://www.boxofficemojo.com/year/?ref_=bo_nb_di_secondarytab"
 
 ### 3. Fetch the Web Page Content
 
-content = requests.get(url)
+content = requests.get(url) <br>
 data = content.text
 
 
